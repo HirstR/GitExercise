@@ -15,7 +15,7 @@ This has a number of advantages:
 
 Ideally the test team would already be prepared with the test suites; this is one of the rare cases where the entire test coverage should be fully automated, because an extensive, robust, unambiguous and fully approved specification already exists.  (Needless to say, this rarely exists in any real-world case; normally, manual exploratory testing is necessary to clarify ambiguous or missing areas of the specification.)  
 
-In addition, extensive automation will be necessary to ensure the level of reliability and stability alluded to in the first paragraph above.
+Another reason to push for full, extensive automation would necessary to ensure the level of reliability and stability alluded to in the first paragraph above.
 
 An implementation of a test stub is included in this repository.  I chose Python to implement the tests, since the language is designed to be easy to read and maintain, including inline documentation.  Also, there is broad developer and tool support, including bindings to test libraries such as Selenium.  There are even several GitHub client implementations, such as PyGitHub, which would serve as excellent interoperability acid tests for this ersatz GitHub implementation.
 
