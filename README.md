@@ -5,7 +5,7 @@ Exercise the GitHub developer API
 
 My immediate concern in testing this API is that the specification is very large and detailed, with many tightly interlocking parts developed somewhat organically over time.  It was not necessarily developed with any expectation that any individual pieces could function independently of the whole.  Moreover, while this admittedly a hypothetical exercise, any real-world attempt to "clone" the functionality of a service as popular and well-regarded as GitHub would have to meet a very high bar for in terms of reliability, stability and ease of operation.  Any partial or less-than-flawless rollout of a re-implementation would seem to be a recipe for failure.  Nevertheless, fools rush in where angels fear to tread, so if I were indeed tasked with this project I would need to identify those parts of the specification that can be implemented and tested without dependencies on other parts of the specification. 
 
-Thus, I would start with the Root Endpoint.  This has a number of advantages:
+Thus, I would start with the Root Endpoint (e.g. https://api.githubclone.com)  This has a number of advantages:
 <ol>
 <li>Accessing this endpoint does not require authentication (which would be the next part to be tested.)</li>
 <li>Accessing this endpoint does not require that any repositories exist yet (creating repositories would be the 3rd area to target for testing.)</li>
