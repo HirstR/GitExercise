@@ -16,5 +16,29 @@ Ideally the test team would already be prepared to provide automated test suites
 
 Another reason to push for full, extensive automation would be to ensure the expected level of reliability and stability as alluded to in the first paragraph above.
 
-An implementation of a test stub is included in this repository.  I chose Python to implement the tests, since the language is designed to be easy to read and maintain, including inline documentation.  Also, there is broad developer and tool support, including bindings to test libraries such as Selenium.  There are even several GitHub client implementations, such as PyGitHub, which would serve as excellent interoperability acid tests for this ersatz GitHub implementation.
+An implementation of a client test stub is included in this repository.  I chose Python to implement the tests, since the language is designed to be easy to read and maintain, including inline documentation.  Also, there is broad developer and tool support, including bindings to test libraries such as Selenium.  There are even several GitHub client implementations, such as PyGitHub, which would serve as excellent interoperability acid tests for this ersatz GitHub implementation.
 
+A very basic stub test server is also included.  It simply serves the same static HTTP response regardless of input.
+
+
+INSTRUCTIONS:
+0) Python 3.x must be installed.
+1) Download GitCloneStub.py and GitCloneTestCase.py.
+2) In a terminal window, start the stub test server with 'python3 GitCloneStub.py'.
+   You should see the message 'GitClone server starting'.
+3) In a separate terminal window, start the test client with 'python3 GitCloneTestCase.py'.
+   You should see output similar to
+   
+   ...
+   ----------------------------------------------------------------------
+   Ran 3 tests in 0.123s
+
+   OK
+
+4) Stop the stub test server by pressing Ctrl-C in the first terminal window.
+5) If you're feeling more adventurous, you can change the SERVER_URL value in GitCloneTestCase.py from
+     'http://localhost:8000' 
+    to
+     'https://api.github.com'
+     
+  and rerun the tests against the actual GitHub server.  The tests should pass as before.
