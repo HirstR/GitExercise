@@ -22,23 +22,26 @@ A very basic stub test server is also included.  It simply serves the same stati
 
 
 INSTRUCTIONS:
-0) Python 3.x must be installed.
-1) Download GitCloneStub.py and GitCloneTestCase.py.
-2) In a terminal window, start the stub test server with 'python3 GitCloneStub.py'.
-   You should see the message 'GitClone server starting'.
-3) In a separate terminal window, start the test client with 'python3 GitCloneTestCase.py'.
+<ol>
+<li>Python 3.x must be installed.</li>
+<li>Download GitCloneStub.py and GitCloneTestCase.py from this repository.</li>
+<li>In a terminal window, start the stub test server with 'python3 GitCloneStub.py'.<br />
+   You should see the message 'GitClone server starting'.</li>
+<li>In a separate terminal window, start the test client with 'python3 GitCloneTestCase.py'.<br />
    You should see output similar to
-   
+   <pre>
    ...
    ----------------------------------------------------------------------
    Ran 3 tests in 0.123s
 
    OK
+   </pre></li>
 
-4) Stop the stub test server by pressing Ctrl-C in the first terminal window.
-5) If you're feeling more adventurous, you can change the SERVER_URL value in GitCloneTestCase.py from
+<li>Stop the stub test server by pressing Ctrl-C in the first terminal window.</li>
+<li>If you're feeling more adventurous, you can change the SERVER_URL value in GitCloneTestCase.py from
      'http://localhost:8000' 
     to
      'https://api.github.com'
-     
   and rerun the tests against the actual GitHub server.  The tests should pass as before.
+</li>
+</ol>
